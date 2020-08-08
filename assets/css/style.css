@@ -19,16 +19,42 @@ header {
     z-index: 9999;
 }
 
-a {
-    color: red;
+header a {
+    color: thistle;
+    font-size: 50px;
+}
+
+.text ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+header nav ul li a {
+    font-size: 25px;
 }
 
 .about-me,
 .my-work,
 .contact-me {
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     display: flex;
     padding-bottom: 50px;
+}
+
+.about-me {
+    background-color: slateblue;
+}
+
+.my-work {
+    background-color: tan;
+}
+
+.contact-me {
+    background-color: palegreen;
+    padding-bottom: 0px;
 }
 
 .section-title {
@@ -47,10 +73,14 @@ a {
     padding-left: 20px;
 }
 
-.text ul {
+.contact-me .text ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
+}
+
+.contact-me .text li:last-child {
+    padding-right: 100px;
 }
