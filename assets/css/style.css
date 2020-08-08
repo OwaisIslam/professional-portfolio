@@ -32,8 +32,8 @@ a {
 }
 
 .section-title {
-    /* display: inline-block;
-    line-height: 10px; */
+    display: inline-block;
+    line-height: 10px;
     background-color: seagreen;
     width: 50%;
     padding-right: 20px;
@@ -45,4 +45,12 @@ a {
     background-color: red;
     width: 100%;
     padding-left: 20px;
+}
+
+.text ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
 }
