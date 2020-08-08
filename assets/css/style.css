@@ -4,18 +4,15 @@
     --tertiary-color: #39a6b2;
 }
 
-/* * {
-	margin: 0;
-	padding: 0;
-    box-sizing: border-box;
-
-} */
+body {
+    background-color: rgb(167, 109, 109);
+}
 
 header {
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
+    /* background-color: var(--tertiary-color); */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     /* position: -webkit-sticky;
     position: sticky;
@@ -30,23 +27,15 @@ header h1 {
 	font-weight: bold;
 	margin: 0;
 	font-size: 36px;
-	color: var(--primary-color);
+	/* color: var(--primary-color); */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
-    color: thistle;
+    /* color: thistle; */
     font-size: 50px;
+    text-decoration: none;
 }
-
-/* header nav ul {
-    background-color: darksalmon;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-} */
 
 header nav ul {
     /* width: 100%; */
@@ -58,17 +47,11 @@ header nav ul {
     width: 100%;
 }
 
-header nav ul li {
-    background-color: green;
-    display: block;
-    float: right;
-}
-
 header nav ul li a {
     font-size: 25px;
     /* display: block; */
     padding: 8px;
-    background-color: hotpink;
+    /* background-color: hotpink; */
 }
 
 .text ul {
@@ -79,29 +62,32 @@ header nav ul li a {
     list-style: none;
 }
 
+/* .about-me,
+.my-work,
+.contact-me {
+    display: flex;
+    padding-bottom: 50px;
+} */
+
 .about-me,
 .my-work,
 .contact-me {
-    /* background-color: rosybrown; */
     display: flex;
+    justify-content: space-between;
     padding-bottom: 50px;
 }
 
-/* .about-me div {
-    display: block;
-} */
-
 .about-me {
-    background-color: slateblue;
+    /* background-color: slateblue; */
 }
 
 .my-work {
-    background-color: tan;
+    /* background-color: tan; */
 }
 
 .contact-me {
-    background-color: palegreen;
-    padding-bottom: 0px;
+    /* background-color: palegreen; */
+    /* padding-bottom: 0px; */
 }
 
 .section-title {
@@ -115,8 +101,13 @@ header nav ul li a {
     border-right: 5px solid;
 }
 
+.section-title h2 {
+    line-height: 50px;
+    /* background-color: indigo */
+}
+
 .text {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     padding-left: 20px;
 }
@@ -127,6 +118,10 @@ header nav ul li a {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+}
+
+.contact-me .text ul li a {
+    text-decoration: none;
 }
 
 .contact-me .text li:last-child {
