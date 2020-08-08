@@ -4,19 +4,34 @@
     --tertiary-color: #39a6b2;
 }
 
+/* * {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+
+} */
+
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
-    z-index: 9999;
+    z-index: 9999; */
+}
+
+header h1 {
+	font-weight: bold;
+	margin: 0;
+	font-size: 36px;
+	color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -24,16 +39,44 @@ header a {
     font-size: 50px;
 }
 
-.text ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	list-style: none;
+/* header nav ul {
+    background-color: darksalmon;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+} */
+
+header nav ul {
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+header nav ul li {
+    background-color: green;
+    display: block;
+    float: right;
 }
 
 header nav ul li a {
     font-size: 25px;
+    /* display: block; */
+    padding: 8px;
+    background-color: hotpink;
+}
+
+.text ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 .about-me,
@@ -43,6 +86,10 @@ header nav ul li a {
     display: flex;
     padding-bottom: 50px;
 }
+
+/* .about-me div {
+    display: block;
+} */
 
 .about-me {
     background-color: slateblue;
@@ -60,11 +107,12 @@ header nav ul li a {
 .section-title {
     display: inline-block;
     line-height: 10px;
-    background-color: seagreen;
+    background-color: gray;
     width: 50%;
     padding-right: 20px;
     font-size: 25px;
     text-align: right;
+    border-right: 5px solid;
 }
 
 .text {
@@ -74,11 +122,11 @@ header nav ul li a {
 }
 
 .contact-me .text ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 .contact-me .text li:last-child {
