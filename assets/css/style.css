@@ -87,7 +87,38 @@ header nav ul li a {
 }
 
 .work {
-    /* background-color: tan; */
+    background-color: tan;
+}
+
+.work-examples-container {
+    /* background-color: brown; */
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.work-grid-item-first {
+    width: 400px;
+    height: 200px;
+    /* background-color: orange; */
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+}
+
+.work-grid-item {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+}
+
+.work-examples-container img {
+    width: 100%;
+    height: 100%;
 }
 
 .contact-me {
