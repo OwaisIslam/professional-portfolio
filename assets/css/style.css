@@ -1,11 +1,9 @@
 :root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --page-color: #a4a4b4;
 }
 
 body {
-    background-color: rgb(164, 164, 180);
+    background-color: var(--page-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,7 +11,6 @@ body {
 
 header {
     padding: 20px 35px;
-    /* background-color: var(--tertiary-color); */
     background-color: rgb(88, 84, 84);
     display: flex;
     justify-content: space-between;
@@ -24,9 +21,8 @@ header h1 {
     background-color: lightblue;
     font-weight: bold;
     margin: 0;
-    padding: 5px;
+    padding: 10px;
     font-size: 36px;
-    /* color: var(--primary-color); */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -71,6 +67,34 @@ header nav ul li a {
     padding: 5px;
 }
 
+.section-title {
+    /* display: flex; */
+    /* background-color: gray; */
+    /* align-items: flex-start; */
+    width: 35%;
+    padding-right: 20px;
+    font-size: 25px;
+    text-align: right;
+    border-right: 5px solid;
+}
+
+#work {
+    width: 22.5%;
+}
+
+.section-title h2 {
+    /* line-height: 100%; */
+    /* background-color: indigo; */
+}
+
+.text {
+    /* background-color: red; */
+    width: 150%;
+    padding: 0px 20px;
+    /* padding-left: 20px; */
+    /* padding-top: 0px; */
+}
+
 .about-me,
 .work,
 .contact-me {
@@ -87,33 +111,42 @@ header nav ul li a {
 }
 
 .work {
-    background-color: tan;
+    /* background-color: tan; */
 }
 
 .work-examples-container {
-    /* background-color: brown; */
+    background-color: brown;
+    width: 100%;
+    /* max-width: 2000px; */
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;
 }
 
+.work-grid-item-first,
+.work-grid-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
 .work-grid-item-first {
-    width: 400px;
-    height: 200px;
     /* background-color: orange; */
-    border: 1px solid black;
-    color: black;
-    padding: 5px;
+    /* border: 1px solid black; */
+    width: 500px;
+    height: 300px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .work-grid-item {
-    width: 200px;
-    height: 100px;
-    background-color: orange;
-    border: 1px solid black;
-    color: black;
-    padding: 5px;
+    /* background-color: orange; */
+    /* border: 1px solid black; */
+    width: 250px;
+    height: 150px;
+    padding-left: 20px;
 }
 
 .work-examples-container img {
@@ -121,32 +154,19 @@ header nav ul li a {
     height: 100%;
 }
 
+.project-title,
+.project-type {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: cyan;
+}
+
 .contact-me {
     /* background-color: palegreen; */
     /* padding-bottom: 0px; */
-}
-
-.section-title {
-    /* background-color: gray; */
-    /* align-items: flex-start; */
-    width: 35%;
-    padding-right: 20px;
-    font-size: 25px;
-    text-align: right;
-    border-right: 5px solid;
-}
-
-.section-title h2 {
-    line-height: 100%;
-    /* background-color: indigo; */
-}
-
-.text {
-    /* background-color: red; */
-    width: 150%;
-    padding: 0px 20px;
-    /* padding-left: 20px; */
-    /* padding-top: 0px; */
 }
 
 .contact-me .text ul {
@@ -156,14 +176,10 @@ header nav ul li a {
     justify-content: space-around;
     list-style: none;
     width: 100%;
-    /* padding-right: 50px; */
     padding-top: 5%;
-    /* padding: 100px 0px; */
 }
 
 .contact-me .text ul li {
-    /* background-color: red; */
-    /* text-decoration: none; */
     border-bottom: 4px solid currentColor;
 }
 
@@ -173,4 +189,22 @@ header nav ul li a {
 
 .contact-me .text li:last-child {
     /* padding-right: 100px; */
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        background-color: darkgreen;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: purple;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        background-color: whitesmoke;
+    }
 }
