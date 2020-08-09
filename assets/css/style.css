@@ -115,9 +115,8 @@ header nav ul li a {
 }
 
 .work-examples-container {
-    background-color: brown;
+    /* background-color: brown; */
     width: 100%;
-    /* max-width: 2000px; */
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr;
@@ -130,6 +129,10 @@ header nav ul li a {
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    bottom: 8px;
+    left: 16px;
+    padding-top: 10px;
+    padding-left: 5px;
 }
 
 .work-grid-item-first {
@@ -137,8 +140,6 @@ header nav ul li a {
     /* border: 1px solid black; */
     width: 500px;
     height: 300px;
-    padding-top: 10px;
-    padding-left: 20px;
 }
 
 .work-grid-item {
@@ -146,7 +147,6 @@ header nav ul li a {
     /* border: 1px solid black; */
     width: 250px;
     height: 150px;
-    padding-left: 20px;
 }
 
 .work-examples-container img {
@@ -154,14 +154,22 @@ header nav ul li a {
     height: 100%;
 }
 
-.project-title,
-.project-type {
+.project-name {
+    background-color: green;
     position: absolute;
     bottom: 20px;
-    right: 15px;
-    font-size: 20px;
-    padding: 5px;
+    left: 15px;
+    padding: 0px 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
     background-color: cyan;
+}
+
+.project-title {
+    font-size: 16px;
+}
+
+.project-type {
+    font-size: 10px;
 }
 
 .contact-me {
@@ -195,11 +203,23 @@ header nav ul li a {
     body {
         background-color: darkgreen;
     }
+
+    #work {
+        /* width: 100%; */
+    }
+
+    .work-examples-container {
+        width: 79.75%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     body {
         background-color: purple;
+    }
+
+    .work-examples-container {
+        width: 78.5%;
     }
 }
 
