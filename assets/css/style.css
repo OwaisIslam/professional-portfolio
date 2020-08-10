@@ -70,9 +70,6 @@ header nav ul li a {
 }
 
 .section-title {
-    /* display: flex;
-    background-color: gray;
-    align-items: flex-start; */
     justify-content: right;
     width: 35%;
     padding-right: 20px;
@@ -88,6 +85,7 @@ header nav ul li a {
 .text {
     width: 150%;
     padding: 0px 20px;
+    font-size: 16px;
 }
 
 .about-me,
@@ -98,16 +96,7 @@ header nav ul li a {
     padding-bottom: 50px;
 }
 
-.about-me {
-    /* background-color: slateblue; */
-}
-
-.work {
-    /* background-color: tan; */
-}
-
 .work-examples-container {
-    /* background-color: brown; */
     width: 100%;
     margin: 0 20px;
     display: grid;
@@ -211,29 +200,54 @@ header nav ul li a {
     body {
         background-color: darkgreen;
     }
+}
 
-    #work {
-        /* width: 100%; */
+@media screen and (max-width: 817px) {
+    body {
+        background-color: red;
     }
 
-    /* .work-examples-container {
-        width: 79.75%;
-    } */
+    header {
+        justify-content: space-evenly;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     body {
         background-color: purple;
     }
+    
+    .quote {
+        font-size: 15px;
+    }
 
-    /* 
-    .work-examples-container {
-        width: 78.5%;
-    } */
+    .section-title {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 575px) {
     body {
         background-color: whitesmoke;
+    }
+
+    .quote, .section-title {
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .project-title {
+        font-size: 14px;
     }
 }
