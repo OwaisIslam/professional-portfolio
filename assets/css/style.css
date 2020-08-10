@@ -1,6 +1,6 @@
 :root {
     --page-color: #c3c3d4;
-    --text-color:#3737bd;
+    --text-color: #3737bd;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
     padding: 0;
 }
 
+/* Header and Navigation Bar Styling start*/
 header {
     padding: 20px 35px;
     background-color: black;
@@ -48,6 +49,10 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Header and Navigation Bar Styling end*/
+
+
+/* Hero Banner Image and Subtitle Styling start*/
 .hero {
     display: flex;
     justify-content: center;
@@ -69,6 +74,10 @@ header nav ul li a {
     padding: 5px;
 }
 
+/* Hero Banner Image and Subtitle Styling end*/
+
+
+/* Main Sections Styling start*/
 .section-title {
     justify-content: right;
     width: 35%;
@@ -78,6 +87,7 @@ header nav ul li a {
     border-right: 5px solid;
 }
 
+/* I had to manually adjust the width here due to the grid causing alignment issues initially. */
 #work {
     width: 23.25%;
 }
@@ -96,6 +106,27 @@ header nav ul li a {
     padding-bottom: 50px;
 }
 
+.contact-me .text ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.contact-me .text ul li {
+    border-bottom: 4px solid currentColor;
+}
+
+.contact-me .text ul li a {
+    text-decoration: none;
+}
+
+/* Main Sections Styling end*/
+
+
+/* Grid Styling start */
 .work-examples-container {
     width: 100%;
     margin: 0 20px;
@@ -169,48 +200,17 @@ header nav ul li a {
     font-size: 10px;
 }
 
-.contact-me {
-    /* background-color: palegreen; */
-    /* padding-bottom: 0px; */
-}
+/* Grid Styling end */
 
-.contact-me .text ul {
-    /* background-color: seagreen; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    width: 100%;
-    padding-top: 5%;
-}
 
-.contact-me .text ul li {
-    border-bottom: 4px solid currentColor;
-}
-
-.contact-me .text ul li a {
-    text-decoration: none;
-}
-
-.contact-me .text li:last-child {
-    /* padding-right: 100px; */
-}
-
-@media screen and (max-width: 980px) {
-    body {
-        background-color: darkgreen;
-    }
-}
+/* Viewports Styling start*/
+@media screen and (max-width: 980px) {}
 
 @media screen and (max-width: 817px) {
-    body {
-        background-color: red;
-    }
-
     header {
         justify-content: space-evenly;
     }
-    
+
     header nav ul li a {
         font-size: 20px;
     }
@@ -221,10 +221,6 @@ header nav ul li a {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background-color: purple;
-    }
-    
     .quote {
         font-size: 15px;
     }
@@ -235,11 +231,18 @@ header nav ul li a {
 }
 
 @media screen and (max-width: 575px) {
-    body {
-        background-color: whitesmoke;
+
+    header nav ul li a,
+    .contact-me .text ul li {
+        font-size: 12px;
     }
 
-    .quote, .section-title {
+    .contact-me .text ul {
+        width: 50%;
+    }
+
+    .quote,
+    .section-title {
         font-size: 12px;
     }
 
@@ -251,3 +254,5 @@ header nav ul li a {
         font-size: 14px;
     }
 }
+
+/* Viewports Styling end*/
